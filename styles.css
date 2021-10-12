@@ -46,6 +46,9 @@ html {
     transform: translateY(4px);
 }
 
+
+
+
 @media screen and (max-width: 768px) {
     .menu-item a {
         display: none;
@@ -339,4 +342,14 @@ html {
         ;
         align-items: center;
     }
+}
+@media screen and (min-width: 768px){
+    .hamburger{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    
+    
 }
