@@ -1,64 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="index.js" defer></script>
-    <title>Document</title>
-  </head>
-  <body>
 
-    <section class="humb-button">
-      <a href="#">
-        <svg viewBox="0 0 10 8" width="50">
-          <path
-            d="M1 1h8M1 4h 8M1 7h8"
-            stroke="#585858"
-            stroke-width="1.5"
-            stroke-linecap="none"
-          />
-        </svg>
-      </a>
-    </section>
-    <main>
-        <h3>"Hello! Horror Fans"</h3>
-        <h1 class="main-header">Master Horror Writers Summit 2021</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, possimus est dolorum, veritatis maxime, odit vel fugit adipisci autem quo necessitatibus sapiente ratione fugiat voluptatum fuga facilis corporis.</p>
-        <h2>2021.10.22(FRI) - 16(SAT)
-        </h2>
-        <p>@Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptate?
-        </p>
-        </main>
-        <section class="main-program">
-<ul >
-    <li class="list">
-        <div class="list-program">
-<img src="images/books.svg" alt="">
-<h5>Book signing</h5>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam obcaecati quasi ipsa reprehenderit laborum.</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="index.js" defer></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <section class="hamburger">
+
+    <a class="menuIcon" href="#">
+      <svg viewBox="0 0 10 8" width="75">
+        <path d="M1 1h8M1 4h 8M1 7h8" stroke="#585858" stroke-width="1.5" stroke-linecap="none" />
+      </svg>
+    </a>
+
+
+  </section>
+  <ul class="menu">
+    <a class=" menu-item closeIcon">X</a>
+    <li><a class="menu-item" href="#link-1">About</a></li>
+    <li><a class="menu-item" href="#link-2">Program</a></li>
+    <li><a class="menu-item" href="#link-3">Join</a></li>
+
+
+  </ul>
+
+
+  <main>
+
+    <br>
+    <br>
+    <br>
+
+    <h3 class="first-line">"Hello! Horror Fans"</h3>
+    <h1 class="main-header">MASTER HORROR WRITERS EVENT 2021</h1>
+    <br>
+    <p class="paragraph-one">All the best horror and science fiction authors in the same major event!</p>
+    <br>
+    <br>
+
+
+
+    <h2 class="date-paragraph">2021.10.22(FRI) - 16(SAT)
+    </h2>
+    <p class="location-paragraph">@ Centro Nacional de Exposiciones Buenos Aires Argentina
+    </p>
+  </main>
+  <br>
+  <br>
+  <br>
+
+  <section class="main-program" id="link-2">
+
+    <ul class="list">
+      <h3 class="main-title">Main Program</h3>
+
+      <li class="cont">
+
+        <div>
+          <img class="list-image" src="images/icons8-books-orange.png" alt="">
+          <h5></h5>Book Reading</h5>
+          <p>You're favourite authors reading chapters of their bestselling books
+          </p>
         </div>
-    </li>
-    <li class="list">Lorem</li>
-    <li class="list">Lorem</li>
-    <li class="list">Lorem</li>
-    <li class="list">Lorem</li>
-    <button type="submit" class="btn">Join </button>
-   
-    </ul>
+      </li>
+      <li>
+        <div class="cont ">
+          <img class="list-image" src="images/icons8-cinema-screen-64.png" alt="">
+          <h5>Movie watching</h5>
+          <p>A cinema theater playing the best based-on books horror movies</p>
+        </div>
+      </li>
+      <li>
+      <li>
+        <div class="cont">
+          <img class="list-image" src="images/icons8-lecture-50.png" alt="">
+          <h5>Authors lecture</h5>
+          <p>Do you have questions for your favorite authors? This is your chance to ask them!</p>
+        </div>
+      </li>
     
-    
-        </section>
 
-  </body>
+      <li>
+        <div class="cont">
+          <img class="list-image" src="images/icons8-photo-camera-64.png" alt="">
+          <h5>Meet and Greet</h5>
+          <p>Bring your camera or phone to take pictures with the authors and talk to them!</p>
+        </div>
+      </li>
+      <button id="link-3" type="submit" class="btn">Join</button>
+
+    </ul>
+
+
+  </section>
+  <section class="speakers">
+    <h2 class="last-header">Featured Speakers</h2>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section class="about" id="link-1">
+    <h3 class="about-title">"Hello! Horror Fans"</h3>
+    <h1 class="main-header2">Master Horror Writers Event 2021</h1>
+    <p class="about-paragraph">Events for book fans is an enterprise dedicated to function as a link between the readers
+      and their favourite authors of all the genres and from any country of the world</p>
+    <p class="about-contact">Please contact us per Email for any further questions about Master Horror Writers Event
+      2021</p>
+    <p class="strong">evensforbookfans@gmail.com</p>
+    <h3 class="last-header">Creative horror writers event 2021 Logo</h3>
+    <div class="line"></div>
+    <p class="about-contact">The logo of Event for book fans was decided through the logo competition from 8. June to 7.
+      July.</p>
+
+
+    <div><img class="logo-brand" src="images/logo-events.jpg" alt="logo"></div>
+    <div class="past-events">
+      <h3 class="last-header">See past Events</h3>
+      <div class="line"></div>
+      <p class="about-contact">Take a look at the last two Events wich took place in San Pablo and New York.</p>
+      <div class="contenedor">
+        <img src="images/foto2018.jpg" />
+        <div class="centrado">SAN PABLO 2018</div>
+      </div>
+      <div class="contenedor">
+        <img src="images/foto2020.jpg" />
+        <div class="centrado">NEW YORK 2020</div>
+      </div>
+
+    </div>
+
+  </section>
+  <footer>
+    <div class="footer-up">
+      <h4 class="footer-title">Partners</h4>
+      <div class="line"></div>
+      <div>
+        <ul class="footer-first">
+          <li class="mozilla">Mozilla</li>
+          <li class="google">Google</li>
+          <li class="air">Airbnb</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="footer-second">
+          <li class="kakao">Daumkakao</li>
+          <li class="naver">Naver</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="bottom-footer">
+      <img class="logo-brand" src="images/logo-events.jpg" alt="logo">
+    </div>
+    <p class="text-footer">2018 Events for book fans <br> All rigths reserved</p>
+    </div>
+  </footer>
+
+</body>
+
 </html>
