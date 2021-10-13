@@ -5,6 +5,8 @@ html {
   background: url(images/pattern31.png)no-repeat;
 }
 
+
+
 .first-line {
   color: rgb(255, 81, 0);
   font-size: 35px;
@@ -341,7 +343,24 @@ html {
   .logo-brand2{
     display: none;
   }
+.speakers-container{
+  margin: 0 3vw;
+  display: flex;
+  flex-direction: column;
 }
+.speakers-images {
+  width :6vw;
+  height: 9vw;
+}
+
+
+
+
+}
+
+
+
+
 @media screen and (min-width: 768px) {
   body {
     margin-right: 2vw;
