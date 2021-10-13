@@ -332,6 +332,14 @@ html {
     flex-direction: column;
     align-items: center;
   }
+  .logo-brand1 {
+    width: 35vw;
+    display: block;
+    margin: auto;
+  }
+  .logo-brand2{
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   body {
@@ -346,17 +354,22 @@ html {
   }
   .nav-bar {
     display: flex;
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    background-color: #606060;
   }
   .nav-list {
     display: flex;
     list-style: none;
     justify-content: end;
     margin-left: 7vw;
+    
   }
   .nav-item a {
     margin: 0 3vw;
     font-weight: bold;
-    color: #606060;
+    color: #383838;
     text-decoration: none;
   }
   .nav-item a:hover {
@@ -370,8 +383,10 @@ html {
     margin-right: 2vw;
   }
   .nav-logo {
-    margin-top: 10px;
-    margin-left: 4vw;
+    margin-top: 1vw;
+    width: 16vw;
+  color:#606060 ;
+    
   }
 
   .nav-btn:hover {
@@ -542,7 +557,7 @@ html {
     padding: 25 15px;
   }
   .logo-brand {
-    width: 50%;
+    width: 24vw;
     display: block;
     margin: auto;
   }
@@ -593,12 +608,44 @@ html {
       padding-left: -900vw;
       margin-left: 17vw;
   }
-  .new-york{
-      margin-right: 28vw;
-  }
+
   .sp {
       color: whitesmoke;
-      margin-left: 14vw
+     margin-left: 15vw;
+  }
+  .footer-desk{ 
+    background-color: #272a31;
+    height: 18vw;
+    margin:3 4vw;
+  }
+  .footer-up{
+    display: none;
+  }
+  .bottom-footer2{
+    margin-top: 1vw;
+    background:#272a31 url(images/logo-footer.jpg)no-repeat;
+    
+  }
+  
+  .text-footer {
+    font-size: 2vw;
+    color: whitesmoke;
+    font-weight: 700;
+    display: flex;
+    justify-content: right;
+    padding-right: 4vw;
+    margin-bottom: 4vw;
+    
+   
+    
+  }
+  .logo-brand1{
+    display: none;
   }
 
-}
+  
+  
+ 
+  }
+
+
