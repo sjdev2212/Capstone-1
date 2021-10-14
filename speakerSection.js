@@ -10,7 +10,7 @@ speakerHeader.appendChild(header)
 
 const speakersList = [
   {
-    image: "writers\stephen-king.jpg",
+    image: "https://github.com/sj1978/Capstone-1/blob/ab18ffdee7c731ab4997d5753a8f025efd9efee3/writers/stephen-king.jpg",
     speakerName: "Stephen King",
     speakerTitle: "The master of horror",
     description:
