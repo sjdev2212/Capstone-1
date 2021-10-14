@@ -450,7 +450,7 @@ html {
   }
   .main-header {
     padding: 0 4vw;
-    text-align: start;
+    text-align: left;
     font-size: 5vw;
     line-height: 6vw;
     color: #ec5242;
