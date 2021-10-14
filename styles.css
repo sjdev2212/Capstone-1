@@ -5,8 +5,6 @@ html {
   background: url(images/pattern31.png)no-repeat;
 }
 
-
-
 .first-line {
   color: rgb(255, 81, 0);
   font-size: 35px;
@@ -96,11 +94,14 @@ html {
     background: url(images/undraw_book_lover_mkck\ .svg) no-repeat;
     background-position: top right;
     background-size: 50vw;
+    color: rgb(255, 81, 0);
+    
   }
   .first-line {
     padding: 5 10px;
     margin-top: 15vw;
     font-size: 8vw;
+    
   }
   .paragraph-one {
     padding: 0 18px;
@@ -305,15 +306,13 @@ html {
   .kakao {
     font-size: 7vw;
     color: #a8a8a8;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     padding: 0 2vw;
   }
   .naver {
     font-size: 8vw;
     color: #a8a8a8;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     padding: 0 2vw;
   }
   .bottom-footer {
@@ -340,26 +339,56 @@ html {
     display: block;
     margin: auto;
   }
-  .logo-brand2{
+  .logo-brand2 {
     display: none;
   }
-.speakers-container{
-  margin: 0 3vw;
-  display: flex;
-  flex-direction: column;
+  .speakers-container {
+    margin: 0 3vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .speakers-images {
+    width: 25vw;
+    height: 50vw;
+    padding-top: 20vw;
+  }
+  .speaker-cards {
+    display: flex;
+  }
+  .speaker-right {
+    display: flex;
+    flex-direction: column;
+    height: 80vw;
+    padding-bottom: 30vw;
+    margin-right: 3vw;
+    margin-left: 2vw;
+  }
+  .speaker-name {
+    color: black;
+    font-weight: bold;
+    margin-left: 6vw;
+    margin-top: 22vw;
+  }
+  .speaker-title {
+    color: #ec5242;
+    font-weight: bold;
+    margin-left: 4vw;
+    margin-top: -5vw;
+    font-size: 5vw;
+  }
+  .speaker-desc {
+    font-weight: bold;
+    color: #606060;
+    text-align: center;
+    margin-left: 3vw;
+    margin-top: -3vw;
+    font-size: 4vw;
+  }
+  .no {
+    display: none;
+  }
+ 
 }
-.speakers-images {
-  width :6vw;
-  height: 9vw;
-}
-
-
-
-
-}
-
-
-
 
 @media screen and (min-width: 768px) {
   body {
@@ -375,16 +404,18 @@ html {
   .nav-bar {
     display: flex;
     overflow: hidden;
-    position: fixed; 
-    top: 0; 
+    position: fixed;
+    top: 0;
     background-color: #606060;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
   }
   .nav-list {
     display: flex;
     list-style: none;
     justify-content: end;
     margin-left: 7vw;
-    
   }
   .nav-item a {
     margin: 0 3vw;
@@ -405,10 +436,8 @@ html {
   .nav-logo {
     margin-top: 1vw;
     width: 16vw;
-  color:#606060 ;
-    
+    color: #606060;
   }
-
   .nav-btn:hover {
     background-color: rgb(248, 197, 68);
   }
@@ -425,11 +454,9 @@ html {
     font-size: 5vw;
     line-height: 6vw;
     color: #ec5242;
-
     background: url(images/undraw_book_lover_mkck\ .svg);
     background-position: right;
     background-repeat: no-repeat;
-
     background-size: 12vw;
   }
   .paragraph-one {
@@ -462,7 +489,6 @@ html {
     margin: 0;
     margin: 0 4vw;
   }
-
   .list {
     display: flex;
     list-style: none;
@@ -591,7 +617,6 @@ html {
   .contenedor {
     position: relative;
     display: inline-block;
-
     color: black;
     width: 80%;
   }
@@ -604,49 +629,40 @@ html {
     font-size: 3svw;
     font-weight: bolder;
   }
-  .past-events .contenedor{
-    display:flex;
+  .past-events .contenedor {
+    display: flex;
     justify-content: space-between;
   }
   .past-events img {
-      
-
     width: 50%;
     height: 150px;
-    
     filter: sepia(17%) brightness(94%) hue-rotate(310deg) contrast(159%);
     -webkit-filter: sepia(17%) brightness(94%) hue-rotate(310deg) contrast(159%);
     -moz-filter: sepia(17%) brightness(94%) hue-rotate(310deg) contrast(159%);
   }
-  .photos-desktop{
-
+  .photos-desktop {
     display: flex;
-
-    
   }
-  .sao-pablo{
-      padding-left: -900vw;
-      margin-left: 17vw;
+  .sao-pablo {
+    padding-left: -900vw;
+    margin-left: 17vw;
   }
-
   .sp {
-      color: whitesmoke;
-     margin-left: 15vw;
+    color: whitesmoke;
+    margin-left: 15vw;
   }
-  .footer-desk{ 
+  .footer-desk {
     background-color: #272a31;
     height: 18vw;
-    margin:3 4vw;
+    margin: 3 4vw;
   }
-  .footer-up{
+  .footer-up {
     display: none;
   }
-  .bottom-footer2{
+  .bottom-footer2 {
     margin-top: 1vw;
-    background:#272a31 url(images/logo-footer.jpg)no-repeat;
-    
+    background: #272a31 url(images/logo-footer.jpg)no-repeat;
   }
-  
   .text-footer {
     font-size: 2vw;
     color: whitesmoke;
@@ -655,17 +671,61 @@ html {
     justify-content: right;
     padding-right: 4vw;
     margin-bottom: 4vw;
-    
-   
-    
   }
-  .logo-brand1{
+  .logo-brand1 {
     display: none;
   }
+  .speakers-images {
+    max-width: 130px;
+    max-height: 130px;
+}
 
+.speakers-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+  margin-left: 30vw;
+  margin-right: 15vw;
+}
+.card{
+    display: flex;
+}
+
+
+
+.speaker-name {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5vw;
+    height: 1vw;
+  margin-top: 0;
+    text-align:start;
+    width:70% ;
+    line-height: 1.2vw;
+}
+
+.speaker-title {
+    color: #ec5242;
+    font-weight: bold;
+    font-size: 1vw;
+    text-align:start;
+    width:50% ;
+    
+    
+}
+
+.speaker-desc {
+    font-weight: bold;
+    color: #606060;
+    text-align:center;
+    font-size: 0.7vw;
+    
+    
   
-  
+    width:50% ;
+}
+.speakers-mob{
+  display: none;
+}
  
-  }
-
-
+  
+}
