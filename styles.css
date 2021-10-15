@@ -5,6 +5,37 @@ html {
   background: url(images/pattern31.png) no-repeat;
 }
 
+.dark-bar {
+  background-color: dimgray;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 200;
+}
+
+.dark-nav {
+  align-items: flex-end;
+}
+
+.dark-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  font-size: 14px;
+  color: whitesmoke;
+  fill: whitesmoke;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.dark-list li {
+  margin: 0 8px;
+}
+
 .main-container {
   padding: 300px 0;
 }
@@ -70,6 +101,18 @@ html {
   color: whitesmoke;
 }
 
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  box-shadow: 0 2px 5px #d0d0d0;
+  position: fixed;
+  top: 0;
+  background-color: whitesmoke;
+  padding-top: 24px;
+}
+
 .hamburger {
   display: none;
 }
@@ -80,23 +123,22 @@ html {
 
 .nav-bar {
   display: flex;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  background-color: rgba(165, 68, 36, 0.1);
-  max-width: 1200px;
+  width: 100%;
   height: 50px;
 }
 
 .nav-list {
   display: flex;
   list-style: none;
-  justify-content: end;
-  margin-left: 7vw;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.dark-img {
+  height: 23px;
 }
 
 .nav-item a {
-  margin: 0 3vw;
   font-weight: bold;
   color: #383838;
   text-decoration: none;
@@ -112,14 +154,12 @@ html {
   border: 2px solid #ec5242;
   width: 3.5rem;
   height: 1.9rem;
-  margin-right: 2vw;
-  margin-top: 0.6rem;
   font-size: 0.8rem;
 }
 
 .nav-logo {
   margin-top: 1vw;
-  width: 16vw;
+  width: 100%;
   color: #606060;
 }
 
@@ -239,11 +279,9 @@ h5 {
   max-width: 900px;
 }
 
-.container-nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  max-width: 400px;
+.header-container {
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .main {
@@ -310,6 +348,7 @@ h5 {
 
 .photos-desktop {
   display: flex;
+  justify-content: space-around;
 }
 
 .sp {
@@ -382,7 +421,6 @@ h5 {
 .down-home {
   display: flex;
   flex-direction: column;
-  width: 100%;
   align-items: center;
   background-color: whitesmoke;
   height: 150px;
@@ -400,7 +438,6 @@ h5 {
 .down-p22 {
   color: #686868;
   font-size: 1.2rem;
-  margin-right: 3.6rem;
   font-weight: bold;
   padding-top: 1.3rem;
 }

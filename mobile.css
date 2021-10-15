@@ -3,8 +3,19 @@
     display: none;
   }
 
+  .dark-bar {
+    display: none;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
   .up-footer {
     background-color: gray;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
   .first-footer {
@@ -262,6 +273,10 @@
     background-color: #606060;
   }
 
+  .footer-desk {
+    display: block;
+  }
+
   .footer-title {
     color: whitesmoke;
     text-align: center;
@@ -432,11 +447,26 @@
     align-items: center;
   }
 
+  .down {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .container-down {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 900px;
+  }
+
   .down-p1 {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   .down-p2 {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
