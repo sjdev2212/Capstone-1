@@ -1,12 +1,3 @@
-const speakerDiv = document.querySelector('.speakers');
-const speakerDivMob = document.querySelector('.speakers-mob');
-const speakerHeader = document.querySelector('.speaker-header');
-speakerDiv.className = 'speakers-container';
-const header = document.createElement('h3');
-header.innerHTML = 'Featured Speakers';
-header.setAttribute('style', 'font-size:6vw; margin-top:20vw; text-align:center;height: 200px;');
-speakerHeader.appendChild(header);
-
 const speakersList = [
   {
     image: 'writers/stephen-king.jpg',
@@ -16,7 +7,7 @@ const speakersList = [
       ' He is the author of nearly 90  books, most of them worldwide bestsellers. His latest novel, BILLY SUMMERS, may even be his best work ever. Also, other favorites .',
   },
   {
-    image: 'writers/Barker.png',
+    image: 'writers/Barker.jpg',
     speakerName: 'Clive Barker',
     speakerTitle: 'Writer and Filmaker',
     description:
@@ -32,7 +23,7 @@ const speakersList = [
   {
     image: 'writers/Rice.jpg',
     speakerName: 'Anne Rice',
-    speakerTitle: "She's cornered the market on Vampires",
+    speakerTitle: 'In the Vampire market',
     description:
       "Anne Rice is the author of over 30 books, most recently the Toby O'Dare novels Of Love and Evil, and Angel Time; the memoir, Called Out of Darkness;and her two novels about Jesus",
   },
@@ -52,57 +43,16 @@ const speakersList = [
   },
 ];
 
-for (let i = 0; i < speakersList.length; i += 1) {
-  const div = document.createElement('div');
-  div.className = 'speaker-cards';
-  const divRight = document.createElement('div');
-  divRight.className = 'speaker-right';
-  const cardDiv = document.createElement('div');
-  cardDiv.className = 'card';
-  const image = document.createElement('img');
-  image.src = speakersList[i].image;
-  image.className = 'speakers-images';
-  const speakerName = document.createElement('h2');
-  speakerName.className = 'speaker-name';
-  speakerName.innerHTML = speakersList[i].speakerName;
-  const speakerTitle = document.createElement('h3');
-  speakerTitle.className = 'speaker-title';
-  speakerTitle.innerHTML = speakersList[i].speakerTitle;
-  const desc = document.createElement('p');
-  desc.className = 'speaker-desc';
-  desc.innerHTML = speakersList[i].description;
-  div.appendChild(image);
-  divRight.appendChild(speakerName);
-  divRight.appendChild(speakerTitle);
-  divRight.appendChild(desc);
-  div.appendChild(divRight);
-  cardDiv.appendChild(div);
-  cardDiv.appendChild(divRight);
-  speakerDiv.appendChild(cardDiv);
-}
+let cards = '';
+speakersList.forEach((speaker) => {
+  cards += `   <div class="speaker-card">
+<img class="speaker-img" src="${speaker.image}" alt="">
+<div class="speaker-detail">
+  <h4 class="speaker-name">${speaker.speakerName}</h4>
+  <p class="speaker-title">${speaker.speakerTitle}</p>
+  <p class="speaker-desc">${speaker.description}</p>
+</div>
+</div>`;
+});
 
-for (let i = 0; i < speakersList.length; i += 1) {
-  const div = document.createElement('div');
-  div.className = 'speaker-cards';
-  const divRight = document.createElement('div');
-  divRight.className = 'speaker-right';
-
-  const image = document.createElement('img');
-  image.src = speakersList[i].image;
-  image.className = 'speakers-images';
-  const speakerName = document.createElement('h2');
-  speakerName.className = 'speaker-name';
-  speakerName.innerHTML = speakersList[i].speakerName;
-  const speakerTitle = document.createElement('h3');
-  speakerTitle.className = 'speaker-title';
-  speakerTitle.innerHTML = speakersList[i].speakerTitle;
-  const desc = document.createElement('p');
-  desc.className = 'speaker-desc';
-  desc.innerHTML = speakersList[i].description;
-  div.appendChild(image);
-  divRight.appendChild(speakerName);
-  divRight.appendChild(speakerTitle);
-  divRight.appendChild(desc);
-  div.appendChild(divRight);
-  speakerDivMob.appendChild(div);
-}
+document.querySelector('#speaker-container').innerHTML = cards;
