@@ -432,14 +432,16 @@ h5 {
   display: flex;
   justify-self: start;
   font-weight: bold;
-  padding-top: 1.3rem;
+  padding: 0;
+  margin-top: 2rem;
 }
 
 .down-p22 {
   color: #686868;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding-top: 1.3rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding: 0;
+  margin-top: 2rem;
 }
 
 .down-p1 {
